@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+</head>
+
+<body>
+
+    <body>
+        <h1>Logout</h1>
+        <button id="logoutButton"></button>
+
+        <script>
+            document.getElementById('logoutButton').addEventListener('click', function () {
+                //sessionStrorage: objeto; removeItem: método do objeto; usuA: chave(key)
+                sessionStorage.removeItem('usuarioAutenticado');
+                window.location.href = 'index.html'
+            })
+        </script>
+    </body>
+</body>
+
+</html>
